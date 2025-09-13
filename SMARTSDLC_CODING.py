@@ -7,11 +7,14 @@ Original file is located at
     https://colab.research.google.com/drive/1oecDNE8TZrg8nu79fJF56mGAdC2BgQcE
 """
 
+# Commented out IPython magic to ensure Python compatibility.
+# %pip install PyPDF2
 import gradio as gr
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 import PyPDF2
 import io
+
 
 # Load model and tokenizer
 model_name = "ibm-granite/granite-3.2-2b-instruct"
